@@ -9,7 +9,7 @@ const config = {
   title: 'Docusaurus Templates',
   tagline: 'Some useful pages for Docusaurus',
   url: 'https://sunlightlyn.github.io',
-  baseUrl: '/docusaurus-templates/', // For github.io/docusaurus-templates/
+  baseUrl: '/', // For github.io/docusaurus-templates/
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -17,8 +17,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'SunlightLyn', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-templates', // Usually your repo name.
+  organizationName: 'playoo', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-a', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
