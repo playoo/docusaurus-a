@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Docusaurus Templates',
   tagline: 'Some useful pages for Docusaurus',
-  url: 'https://docusaurus-a-t6xidt53kp.zh-cn.edgeone.cool/',
+  url: 'https://docusaurus-a.zh-cn.edgeone.cool/',
   baseUrl: '/', // For github.io/docusaurus-templates/
   trailingSlash: false,
   onBrokenLinks: 'throw',
