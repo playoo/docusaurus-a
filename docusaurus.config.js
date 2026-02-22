@@ -64,8 +64,7 @@ const config = {
         routeBasePath: 'product',
         sidebarPath: require.resolve('./sidebarsProduct.js'),
         // 设置首页文档
-        homePageId: 'intro', // 假设你的产品文档首页文件是 intro.md
-      },
+              },
     ],
     [
       '@docusaurus/plugin-content-docs',
@@ -75,8 +74,7 @@ const config = {
         routeBasePath: 'community',
         sidebarPath: require.resolve('./sidebarsCommunity.js'),
         // 设置首页文档
-        homePageId: 'welcome', // 假设你的社区文档首页文件是 welcome.md
-      },
+              },
     ],
   ],
 
