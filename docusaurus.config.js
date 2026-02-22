@@ -1,3 +1,4 @@
+
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
@@ -53,15 +54,17 @@ const config = {
       }),
     ],
   ],
-plugins: [
+  
+  plugins: [
     [
       '@docusaurus/plugin-content-docs',
       {
-        // id: 'product', // omitted => default instance
+        id: 'product',
         path: 'product',
         routeBasePath: 'product',
-        sidebarPath: './sidebarsProduct.js',
-        // ... other options
+        sidebarPath: require.resolve('./sidebarsProduct.js'),
+        // 设置首页文档
+        homePageId: 'intro', // 假设你的产品文档首页文件是 intro.md
       },
     ],
     [
@@ -70,11 +73,13 @@ plugins: [
         id: 'community',
         path: 'community',
         routeBasePath: 'community',
-        sidebarPath: './sidebarsCommunity.js',
-        // ... other options
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+        // 设置首页文档
+        homePageId: 'welcome', // 假设你的社区文档首页文件是 welcome.md
       },
     ],
   ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -86,27 +91,25 @@ plugins: [
         },
         items: [
           {
-            type: 'doc',
-            docId: 'product',
+            to: '/product/intro',  // 直接链接到产品文档首页
             position: 'left',
-            label: '收藏夹',
+            label: '产品文档',
           },
           {
-            type: 'doc',
-            docId: 'community',
+            to: '/community/welcome',  // 直接链接到社区文档首页
             position: 'left',
-            label: '收藏夹',
+            label: '社区文档',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: '博客', position: 'left' },
           {
-            label: 'Pages',
+            label: '更多',
             position: 'left',
             items: [
-              {to: '/about', label: 'About'},
+              { to: '/about', label: '关于' },
             ],
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/playoo/docusaurus-a',
             label: 'GitHub',
             position: 'right',
           },
@@ -116,16 +119,20 @@ plugins: [
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '文档',
             items: [
               {
-                label: '收藏夹',
-                to: '/docs/intro',
+                label: '产品文档',
+                to: '/product/intro',
+              },
+              {
+                label: '社区文档',
+                to: '/community/welcome',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
                 label: 'Stack Overflow',
@@ -142,20 +149,24 @@ plugins: [
             ],
           },
           {
-            title: 'More',
+            title: '更多',
             items: [
               {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
               },
               {
+                label: '关于',
+                to: '/about',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/playoo/docusaurus-a',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 我的项目. 使用 Docusaurus 构建。`,
       },
       prism: {
         theme: lightCodeTheme,
