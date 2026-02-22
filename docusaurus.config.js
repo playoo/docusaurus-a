@@ -1,30 +1,167 @@
-// docusaurus.config.js
-export default {
-  // 使用预设时，第一个文档实例（默认）在 presets 中配置
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'Docusaurus Templates',
+  tagline: 'Some useful pages for Docusaurus',
+  url: 'https://docusaurus-a.zh-cn.edgeone.cool/',
+  baseUrl: '/', // For github.io/docusaurus-templates/
+  trailingSlash: false,
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'playoo', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-a', // Usually your repo name.
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
+  },
+
   presets: [
     [
-      '@docusaurus/preset-classic',
-      {
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
-          id: 'product', // 可以不写 id，作为默认实例
-          path: 'product', // 文档文件所在文件夹
-          routeBasePath: 'product', // 访问路由：/product/
-          sidebarPath: './sidebarsProduct.js', // 独立的侧边栏
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/playoo/docusaurus-a/edit/main/',
         },
-        // ... 其他预设配置
-      },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/playoo/docusaurus-a/edit/main/',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      }),
     ],
   ],
-  // 第二个文档实例在 plugins 中配置
-  plugins: [
+plugins: [
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'community', // 唯一的 id
+        // id: 'product', // omitted => default instance
+        path: 'product',
+        routeBasePath: 'product',
+        sidebarPath: './sidebarsProduct.js',
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
         path: 'community',
-        routeBasePath: 'community', // 访问路由：/community/
+        routeBasePath: 'community',
         sidebarPath: './sidebarsCommunity.js',
+        // ... other options
       },
     ],
   ],
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
+        title: '我的收藏夹',
+        logo: {
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'product',
+            position: 'left',
+            label: '收藏夹',
+          },
+          {
+            type: 'doc',
+            docId: 'community',
+            position: 'left',
+            label: '收藏夹',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            label: 'Pages',
+            position: 'left',
+            items: [
+              {to: '/about', label: 'About'},
+            ],
+          },
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: '收藏夹',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
+
+module.exports = config;
