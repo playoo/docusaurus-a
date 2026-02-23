@@ -20,9 +20,9 @@
     linear-gradient(rgba(0, 0, 0, 0.05) 0.5px, transparent 0.5px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0.5px, transparent 0.5px);
   background-size: 
-    30px 30px,  /* 主要网格间距 */
-    30px 30px,  /* 主要网格间距 */
-    10px 10px,  /* 次要网格间距 */
-    10px 10px;  /* 次要网格间距 */
+    10px 10px,  /* 主要网格间距 */
+    10px 10px,  /* 主要网格间距 */
+    5px 5px,  /* 次要网格间距 */
+    5px 5px;  /* 次要网格间距 */
   background-position: center center;
 }
