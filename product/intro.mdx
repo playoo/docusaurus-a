@@ -1,57 +1,34 @@
-import React, { useState } from 'react';
 
-// 定义 B站视频ID
-const bvid = "BV1xx411c7mD";  // 改成你的B站视频ID
+### MDX（.mdx）
+MDX **完全包含**上述 Markdown 语法，并在此基础上增加了组件能力：
 
-// 视频播放器组件
-const BilibiliPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  
-  const videoUrl = `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=${isPlaying}&high_quality=1`;
+```mdx
+# 标题
 
-  return (
-    <div style={{ marginTop: '20px' }}>
-      {/* 播放控制按钮 */}
-      <button 
-        onClick={() => setIsPlaying(!isPlaying)}
-        style={{
-          padding: '10px 20px',
-          marginBottom: '15px',
-          backgroundColor: isPlaying ? '#ff4d4d' : '#00a1d6',
-          color: 'white',
-          border: 'none',
-          borderRadius: '4px',
-          cursor: 'pointer'
-        }}
-      >
-        {isPlaying ? '暂停视频' : '播放视频'}
-      </button>
+这是一段普通文本，可以**加粗**或*斜体*。
 
-      {/* B站播放器 */}
-      <iframe 
-        src={videoUrl}
-        width="100%" 
-        height="500px"
-        frameBorder="no"
-        scrolling="no"
-        allowFullScreen={true}
-        style={{
-          borderRadius: '8px',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-        }}
-      />
-    </div>
-  );
-};
+## 使用导入的组件
 
-{/* 在文档中使用播放器 */}
-# 我的视频教程
+import Button from '../components/Button'
 
-下面是一个B站视频示例：
+可以直接使用 React 组件：
+<Button variant="primary">点击我</Button>
 
-<BilibiliPlayer />
+## 在 Markdown 中混用 JSX
 
-你也可以直接嵌入多个视频：
+<div style={{ padding: '20px', background: '#f0f0f0' }}>
+  <h3>这是一个 JSX 容器</h3>
+  <p>里面可以写普通文本，也可以<Button size="small">嵌套组件</Button></p>
+</div>
 
-## 第二个视频
-<BilibiliPlayer />
+## 导出变量（MDX 特有）
+
+export const meta = {
+  title: '文章标题',
+  date: '2024-01-01'
+}
+
+还可以在列表中使用组件：
+- 普通列表项
+- <Button>列表中的按钮</Button>
+- 另一个普通项
