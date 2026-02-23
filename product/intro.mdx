@@ -1,70 +1,57 @@
----
-sidebar_position: 1
----
 import React, { useState } from 'react';
 
-export const BilibiliPlayer = ({ bvid }) => {
+// 定义 B站视频ID
+const bvid = "BV1xx411c7mD";  // 改成你的B站视频ID
+
+// 视频播放器组件
+const BilibiliPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   
-  const videoUrl = `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=false&high_quality=1`;
+  const videoUrl = `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=${isPlaying}&high_quality=1`;
 
   return (
-    <div style={{ 
-      margin: '20px 0',
-      border: '1px solid #e3e3e3',
-      borderRadius: '8px',
-      overflow: 'hidden',
-      boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-    }}>
-      <div style={{ 
-        padding: '12px 16px',
-        background: '#f5f5f5',
-        borderBottom: '1px solid #e3e3e3',
-        display: 'flex',
-        alignItems: 'center'
-      }}>
-        <button
-          onClick={() => setIsPlaying(!isPlaying)}
-          style={{
-            flex: 1,
-            padding: '8px 20px',
-            background: isPlaying ? '#f25d8e' : '#00a1d6',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px',
-            fontWeight: '500',
-            transition: 'background 0.2s'
-          }}
-          onMouseEnter={(e) => e.target.style.background = isPlaying ? '#e0557f' : '#00b8e6'}
-          onMouseLeave={(e) => e.target.style.background = isPlaying ? '#f25d8e' : '#00a1d6'}
-        >
-          {isPlaying ? '隐藏视频' : '播放视频'}
-        </button>
-      </div>
-      
-      {isPlaying && (
-        <div style={{ position: 'relative', paddingTop: '56.25%' }}>
-          <iframe
-            src={videoUrl}
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              border: 'none'
-            }}
-            scrolling="no"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-      )}
+    <div style={{ marginTop: '20px' }}>
+      {/* 播放控制按钮 */}
+      <button 
+        onClick={() => setIsPlaying(!isPlaying)}
+        style={{
+          padding: '10px 20px',
+          marginBottom: '15px',
+          backgroundColor: isPlaying ? '#ff4d4d' : '#00a1d6',
+          color: 'white',
+          border: 'none',
+          borderRadius: '4px',
+          cursor: 'pointer'
+        }}
+      >
+        {isPlaying ? '暂停视频' : '播放视频'}
+      </button>
+
+      {/* B站播放器 */}
+      <iframe 
+        src={videoUrl}
+        width="100%" 
+        height="500px"
+        frameBorder="no"
+        scrolling="no"
+        allowFullScreen={true}
+        style={{
+          borderRadius: '8px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        }}
+      />
     </div>
   );
 };
 
-<BilibiliPlayer bvid="BV1GJ411x7h7" />
-<BilibiliPlayer bvid="BV1rFxszSELm" />
+{/* 在文档中使用播放器 */}
+# 我的视频教程
+
+下面是一个B站视频示例：
+
+<BilibiliPlayer />
+
+你也可以直接嵌入多个视频：
+
+## 第二个视频
+<BilibiliPlayer />
