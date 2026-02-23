@@ -1,47 +1,70 @@
 ---
 sidebar_position: 1
 ---
+import React, { useState } from 'react';
 
-# Tutorial Intro
+export const BilibiliPlayer = ({ bvid }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  
+  const videoUrl = `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=false&high_quality=1`;
 
-Let's discover **Docusaurus in less than 5 minutes**.
+  return (
+    <div style={{ 
+      margin: '20px 0',
+      border: '1px solid #e3e3e3',
+      borderRadius: '8px',
+      overflow: 'hidden',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+    }}>
+      <div style={{ 
+        padding: '12px 16px',
+        background: '#f5f5f5',
+        borderBottom: '1px solid #e3e3e3',
+        display: 'flex',
+        alignItems: 'center'
+      }}>
+        <button
+          onClick={() => setIsPlaying(!isPlaying)}
+          style={{
+            flex: 1,
+            padding: '8px 20px',
+            background: isPlaying ? '#f25d8e' : '#00a1d6',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontSize: '14px',
+            fontWeight: '500',
+            transition: 'background 0.2s'
+          }}
+          onMouseEnter={(e) => e.target.style.background = isPlaying ? '#e0557f' : '#00b8e6'}
+          onMouseLeave={(e) => e.target.style.background = isPlaying ? '#f25d8e' : '#00a1d6'}
+        >
+          {isPlaying ? '隐藏视频' : '播放视频'}
+        </button>
+      </div>
+      
+      {isPlaying && (
+        <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+          <iframe
+            src={videoUrl}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              border: 'none'
+            }}
+            scrolling="no"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      )}
+    </div>
+  );
+};
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+<BilibiliPlayer bvid="BV1GJ411x7h7" />
+<BilibiliPlayer bvid="BV1rFxszSELm" />
