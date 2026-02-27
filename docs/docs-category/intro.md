@@ -1,6 +1,7 @@
 ---
 sidebar_label: 🏠 首页
 sidebar_position: 1
+title: ℹ️ 首页
 ---
 
 **本地怎么启动实时模拟器**
