@@ -16,18 +16,18 @@ hide_table_of_contents: true
       boxShadow: '0 4px 15px rgba(0,0,0,0.1)'
     }} 
   />
-  <h1 style={{ fontSize: '2.5rem', margin: '1rem 0 0.5rem' }}>张三</h1>
+  <h1 style={{ fontSize: '2.5rem', margin: '1rem 0 0.5rem' }}>旧梦</h1>
   <p style={{ fontSize: '1.2rem', color: '#666' }}>全栈开发工程师 · 技术爱好者</p>
 </div>
 
 ## 👋 关于我
 
-你好！我是张三，一名热爱技术和生活的全栈开发工程师。我热衷于探索新技术，分享知识，并通过代码创造有价值的产品。
+你好！我是旧梦，一名热爱技术和生活的全栈开发工程师。我热衷于探索新技术，分享知识，并通过代码创造有价值的产品。
 
 - 🏠 现居：北京
 - 💼 工作：ABC 科技公司 · 高级前端工程师
-- 📧 邮箱：zhangsan@example.com
-- 🌐 网站：https://your-website.com
+- 📧 邮箱：ldd8008@gmail.com
+- 🌐 网站：https://1002.work
 
 ## 💻 技术栈
 
@@ -110,10 +110,12 @@ hide_table_of_contents: true
 
 ## 📄 简历
 
-如果你想了解更多关于我的工作经历和技能，可以查看我的 [在线简历](/resume) 或 [下载 PDF 版本](/resume.pdf)。
+如果你想了解更多关于我的工作经历和技能，可以查看我的.
 
 <div style={{ background: '#f0f9ff', padding: '1rem', borderRadius: '8px', marginTop: '2rem' }}>
   <p style={{ margin: 0, color: '#0369a1' }}>
     💡 欢迎通过邮件联系我：zhangsan@example.com，一般 24 小时内回复。
   </p>
 </div>
+------
+ [编辑此页](https://github.com/playoo/docusaurus-a/edit/main/src/pages/about.md) 
