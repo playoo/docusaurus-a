@@ -17,8 +17,8 @@ const config: Config = {
   baseUrl: '/',
 
   // GitHub Pages 部署相关配置
-  organizationName: 'facebook', // GitHub 组织/用户名
-  projectName: 'docusaurus', // GitHub 仓库名
+  organizationName: 'playoo', // GitHub 组织/用户名
+  projectName: 'docusaurus-a', // GitHub 仓库名
 
   // 遇到无效链接时的处理方式（throw 表示抛出错误）
   onBrokenLinks: 'warn',
@@ -35,14 +35,14 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts', // 侧边栏配置文件路径
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // 编辑文档的链接
+          editUrl: 'https://github.com/playoo/docusaurus-a/blob/main/', // 编辑文档的链接
         },
         blog: {
           showReadingTime: true, // 显示阅读时长
           blogSidebarCount: 10, // 博客侧边栏显示的文章数量
           blogSidebarTitle: '最新文章', // 博客侧边栏标题
           postsPerPage: 5, // 每页显示的博客文章数
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // 编辑博客的链接
+          editUrl: 'https://github.com/playoo/docusaurus-a/blob/main/', // 编辑博客的链接
           onInlineTags: 'warn', // 内联标签警告
           onInlineAuthors: 'warn', // 内联作者警告
           onUntruncatedBlogPosts: 'warn', // 未截断博客文章警告
@@ -86,8 +86,8 @@ const config: Config = {
         { to: '/thoughts', label: '📜碎碎念', position: 'right' },
         { to: '/about', label: '📄关于', position: 'right' },
         {
-          href: 'https://github.com/yourusername/your-repo',
-          label: 'GitHub',
+          href: 'https://github.com/playoo/docusaurus-a',
+          label: '♐GitHub',
           position: 'right',
         },
       ],
