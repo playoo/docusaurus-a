@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/docs-category/intro">
-            点击进入我的文档类 ⏱️
+            点击进入↗️我的文档类📗
           </Link>
            </div>
           <br/>
@@ -30,7 +30,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/url-category/links">
-            点击进入我的收藏类 ⏱️
+            点击进入↗️我的收藏类📜
           </Link>
          </div>
       </div>
