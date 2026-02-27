@@ -10,10 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico', // 网站图标
 
   // Future flags，提前兼容 Docusaurus v4
-  future: {
-    v4: true,
-  },
-
+  
   // 生产环境的网站 URL
   url: 'https://your-docusaurus-site.example.com',
   // 网站部署的基础路径（GitHub Pages 通常需要设为 /仓库名/）
