@@ -114,7 +114,7 @@ hide_table_of_contents: true
 
 <div style={{ background: '#f0f9ff', padding: '1rem', borderRadius: '8px', marginTop: '2rem' }}>
   <p style={{ margin: 0, color: '#0369a1' }}>
-    💡 欢迎通过邮件联系我：zhangsan@example.com，一般 24 小时内回复。
+    💡 欢迎通过邮件联系我：ldd8008@gmail.com，一般 24 小时内回复。
   </p>
 </div>
 ------
