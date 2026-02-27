@@ -12,7 +12,7 @@ const config: Config = {
   // Future flags，提前兼容 Docusaurus v4
   
   // 生产环境的网站 URL
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://1002.work',
   // 网站部署的基础路径（GitHub Pages 通常需要设为 /仓库名/）
   baseUrl: '/',
 
@@ -35,14 +35,14 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts', // 侧边栏配置文件路径
-          editUrl: 'https://github.com/playoo/docusaurus-a/blob/main/', // 编辑文档的链接
+          editUrl: 'https://github.com/playoo/docusaurus-a/edit/main/', // 编辑文档的链接
         },
         blog: {
           showReadingTime: true, // 显示阅读时长
           blogSidebarCount: 10, // 博客侧边栏显示的文章数量
           blogSidebarTitle: '最新文章', // 博客侧边栏标题
           postsPerPage: 5, // 每页显示的博客文章数
-          editUrl: 'https://github.com/playoo/docusaurus-a/blob/main/', // 编辑博客的链接
+          editUrl: 'https://github.com/playoo/docusaurus-a/edit/main/', // 编辑博客的链接
           onInlineTags: 'warn', // 内联标签警告
           onInlineAuthors: 'warn', // 内联作者警告
           onUntruncatedBlogPosts: 'warn', // 未截断博客文章警告
