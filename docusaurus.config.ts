@@ -58,7 +58,6 @@ const config: Config = {
     // 社交卡片图片
     image: 'img/docusaurus-social-card.jpg',
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
     algolia: {
       // Algolia 提供的应用 ID
       appId: 'H9PH7OH9E6',
@@ -93,7 +92,7 @@ const config: Config = {
       askAi: 'YOUR_ALGOLIA_ASK_AI_ASSISTANT_ID',
 
       //... 其他 Algolia 参数
-
+    },
     // 颜色模式配置（尊重系统偏好）
     colorMode: {
       respectPrefersColorScheme: true,
