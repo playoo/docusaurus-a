@@ -29,7 +29,7 @@ const Moments = () => {
       content: '今天下着小雨，但却仍然要去做牛马😑…',
       images: ['https://picsum.photos/200/200', 'https://picsum.photos/40/40', 'https://picsum.photos/200/200', 'https://picsum.photos/200/200'],
       likes: ['王五', '赵六', '小七'],
-      comments: [{ from: '王五', content: '生活不易，都这样，习惯就好！' }]
+      comments: []
     }
   ];
 
