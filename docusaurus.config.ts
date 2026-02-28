@@ -63,7 +63,7 @@ const config: Config = {
       appId: 'H9PH7OH9E6',
 
       //  公开 API 密钥：提交它没有危险
-      apiKey: '8f0c255b8f8bee76f551637eafeb87ee',
+      apiKey: 'a604eefd5dc6ac87951a2a2011a5c337',
 
       indexName: '1002.work_H9PH7OH9E6',
 
