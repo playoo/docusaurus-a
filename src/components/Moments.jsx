@@ -9,15 +9,15 @@ const Moments = () => {
   const momentsData = [
     {
       id: 1,
-      time: '今天 14:23',
-      content: '终于把 MDX 编辑器做完了，记录一下这个小成就 ✨',
+      time: '2026年2月26日 14:23',
+      content: '终于把碎碎念做完了，记录一下这个小成就 ✨',
       images: [],
       likes: ['张三', '李四'],
       comments: [{ from: '张三', content: '厉害呀！' }, { from: '我', to: '张三', content: '谢谢～' }]
     },
     {
       id: 2,   
-      time: '昨天 20:45',
+      time: '2026年2月27日 20:45',
       content: '分享一组好看的风景照，周末去爬山拍的～',
       images: ['https://picsum.photos/200/200', 'https://picsum.photos/40/40', 'https://picsum.photos/200/200', 'https://picsum.photos/200/200'],
       likes: ['王五', '赵六', '小七'],
@@ -25,7 +25,7 @@ const Moments = () => {
     },
     {
       id: 3,   
-      time: '今天 13:06',
+      time: '2026年2月28日 13:06',
       content: '今天下着小雨，但却仍然要去做牛马😑…',
       images: ['https://picsum.photos/200/200', 'https://picsum.photos/40/40', 'https://picsum.photos/200/200', 'https://picsum.photos/200/200'],
       likes: ['王五', '赵六', '小七'],
