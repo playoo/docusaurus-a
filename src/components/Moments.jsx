@@ -19,7 +19,7 @@ const Moments = () => {
       id: 2,   
       time: '2026年2月27日 20:45',
       content: '分享一组好看的风景照，周末去爬山拍的～',
-      images: ['https://picsum.photos/200/200', 'https://picsum.photos/40/40', 'https://picsum.photos/200/200', 'https://picsum.photos/200/200'],
+      images: ['https://picsum.photos/200/200', 'https://picsum.photos/333/40/40', 'https://picsum.photos/222/200/200', 'https://picsum.photos/111/200/200'],
       likes: ['王五', '赵六', '小七'],
       comments: [{ from: '王五', content: '这是哪里呀？风景好美！' }, { from: '我', to: '王五', content: '是黄山哦，值得一去～' }]
     },
@@ -27,7 +27,7 @@ const Moments = () => {
       id: 3,   
       time: '2026年2月28日 13:06',
       content: '今天下着小雨，但却仍然要去做牛马😑…',
-      images: ['https://picsum.photos/200/200', 'https://picsum.photos/40/40', 'https://picsum.photos/200/200', 'https://picsum.photos/200/200'],
+      images: ['https://picsum.photos/666/200/200', 'https://picsum.photos/555/40/40', 'https://picsum.photos/444/200/200', 'https://picsum.photos/200/200'],
       likes: ['王五', '赵六', '小七'],
       comments: []
     }
