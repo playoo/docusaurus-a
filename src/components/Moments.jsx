@@ -408,7 +408,7 @@ const Moments = () => {
   {
     id: 46,
     time: '2026年2月26日 14:23',
-    content: '终于把碎碎念做完了，记录一下这个小成就 ✨',
+    content: '👌终于把碎碎念做完了，记录一下这个小成就 ✨',
     images: [],
     likes: ['张三', '李四'],
     comments: [
