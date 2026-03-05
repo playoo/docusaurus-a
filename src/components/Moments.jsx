@@ -432,7 +432,7 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
-  
+  }
   ];
 
   // 图片九宫格
