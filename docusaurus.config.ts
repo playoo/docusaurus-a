@@ -65,7 +65,7 @@ const config: Config = {
       //  公开 API 密钥：提交它没有危险
       apiKey: '8c46c1e09350200f5db3fb884ad50ffa',
 
-      indexName: '1002work-ok',
+      indexName: '1002pachong',
 
       // 可选：见下文
       contextualSearch: true,
