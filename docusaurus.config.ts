@@ -60,12 +60,12 @@ const config: Config = {
     // Replace with your project's social card
     algolia: {
       // Algolia 提供的应用 ID
-      appId: 'H9PH7OH9E6',
+      appId: 'FPF8QMDZB9',
 
       //  公开 API 密钥：提交它没有危险
-      apiKey: 'a604eefd5dc6ac87951a2a2011a5c337',
+      apiKey: '8c46c1e09350200f5db3fb884ad50ffa',
 
-      indexName: '1002.work_H9PH7OH9E6',
+      indexName: '1002work-ok',
 
       // 可选：见下文
       contextualSearch: true,
