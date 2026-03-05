@@ -173,7 +173,7 @@ const config: Config = {
         // },
       ],
       // 版权信息（动态获取当前年份）
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 1002工作室, Inc. Built with Docusaurus.`,
     },
     // 代码高亮配置
     prism: {
