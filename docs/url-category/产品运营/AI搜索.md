@@ -1,7 +1,7 @@
 ---
 sidebar_position: 9
 ---
-#AI搜索
+# AI搜索
 | 名称 | 网址 |
 |------|------|
 | New Bing 镜像 1 | https://bingai.zklcdc.xyz/web/index.html?showconv=1#/ |
