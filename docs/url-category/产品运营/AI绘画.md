@@ -1,7 +1,7 @@
 ---
 sidebar_position: 10
 ---
-#AI绘画
+# AI绘画
 | 名称 | 网址 |
 |------|------|
 | Midjourney | https://www.midjourney.com/showcase |
