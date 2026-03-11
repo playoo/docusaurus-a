@@ -14,8 +14,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
-碎碎念:
-  label: 碎碎念
+碎碎语:
+  label: 碎碎语
   permalink: /ssn
   description: 碎碎念 tag description
 流水账:
