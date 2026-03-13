@@ -45,7 +45,8 @@ const config: Config = {
           editUrl: 'https://github.com/playoo/docusaurus-a/edit/main/', // 编辑博客的链接
           onInlineTags: 'warn', // 内联标签警告
           onInlineAuthors: 'warn', // 内联作者警告
-          onUntruncatedBlogPosts: 'warn', // 未截断博客文章警告
+          // onUntruncatedBlogPosts: 'warn', // 未截断博客文章警告
+          onUntruncatedBlogPosts: 'ignore',//关闭，未断博客文章警告
         },
         theme: {
           customCss: './src/css/custom.css', // 自定义 CSS 文件路径
