@@ -79,8 +79,8 @@ hide_table_of_contents: true
 ## 📊 GitHub 统计
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '2rem 0' }}>
-  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=vue" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=vue" alt="Top langs" />
+  <img src="https://github-readme-stats.vercel.app/api?username=playoo&show_icons=true&theme=vue" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=playoo&layout=compact&theme=vue" alt="Top langs" />
 </div>
 
 ## 📫 联系我
