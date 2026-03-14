@@ -12,3 +12,4 @@ title: 网址收藏
 - [Google](https://www.google.com)
 - [GitHub](https://github.com)
 - [Docusaurus](https://docusaurus.io)
+- [colorbox](https://colorbox.io/))
