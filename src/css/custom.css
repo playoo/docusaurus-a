@@ -32,7 +32,7 @@
 
 :root {
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
-  --ifm-color-primary: #ff6b6b;
+  --ifm-color-primary: #4b5cc4;  /* #ff6b6b */
   --ifm-color-primary-dark: #ff5252;
   --ifm-color-primary-darker: #ff4242;
   --ifm-color-primary-darkest: #ff1a1a;
