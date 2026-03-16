@@ -10,6 +10,11 @@ title: ℹ️ 首页
 cd my-website
 ```
 ------
+**第一步在cmd中输入，按回车键**
+```
+cd docusaurus-a
+```
+------
 **第二部继续输入后，按回车键**
 ```
 npm run start
