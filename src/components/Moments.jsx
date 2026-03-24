@@ -488,6 +488,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+    },
+    {
+    id: 56,
+    time: '2026年3月25日 7:50',
+    content: '㊗️愿我们都能少一些内耗，多一些豁达；少一些透支，多一些珍惜，平安、健康地走完这一生！',
+    images: [],
+    likes: [],
+    comments: []
     }
   ];
 
