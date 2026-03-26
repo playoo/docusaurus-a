@@ -496,6 +496,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+    },
+    {
+    id: 57,
+    time: '2026年3月26日 9:14',
+    content: '😁人生最好的状态便是眼里有光，心中有爱,脚下有路，身边有人。',
+    images: [],
+    likes: [],
+    comments: []
     }
   ];
 
