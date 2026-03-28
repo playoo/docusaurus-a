@@ -13,3 +13,22 @@ title: 网址收藏
 - [GitHub](https://github.com)
 - [Docusaurus](https://docusaurus.io)
 - [colorbox](https://colorbox.io/)
+---
+###多级菜单实例
+
+<details>
+  <summary>📁 一级菜单</summary>
+
+  - 普通功能
+  - 高级功能
+    <details>
+      <summary>⚙️ 高级设置</summary>
+
+      - 选项 A
+      - 选项 B
+        - 子选项 B1
+        - 子选项 B2
+    </details>
+  - 其他功能
+
+</details>
