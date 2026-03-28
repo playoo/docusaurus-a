@@ -90,3 +90,50 @@ title: 网址收藏
   - 其他功能
   - 
 </details>
+
+
+
+---
+###五级菜单实例
+<details>
+  <summary><a href="#"><strong>📁 一级菜单</strong></a></summary>
+
+  - 一级功能 A
+  - 一级功能 B
+    <details>
+      <summary><a href="#"><strong>📂 二级菜单</strong></a></summary>
+
+      - 二级功能 A
+      - 二级功能 B
+        <details>
+          <summary><a href="#"><strong>🗂️ 三级菜单</strong></a></summary>
+
+          - 三级功能 A
+          - 三级功能 B
+            <details>
+              <summary><a href="#"><strong>📑 四级菜单</strong></a></summary>
+
+              - 四级功能 A
+              - 四级功能 B
+                <details>
+                  <summary><a href="#"><strong>🔖 五级菜单</strong></a></summary>
+
+                  - 五级功能 A
+                  - 五级功能 B
+                    - 深层子项 B1
+                    - 深层子项 B2
+                  - 五级功能 C
+
+                </details>
+              - 四级功能 C
+
+            </details>
+          - 三级功能 C
+
+        </details>
+      - 二级功能 C
+
+    </details>
+  - 一级功能 C
+
+</details>
