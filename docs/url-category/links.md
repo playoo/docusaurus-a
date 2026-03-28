@@ -32,3 +32,22 @@ title: 网址收藏
   - 其他功能
 
 </details>
+
+###多级菜单实例
+
+<details>
+  <summary>📁 一级菜单</summary>
+    <details>
+      <summary>⚙️ 高级设置</summary>
+      - [colorbox](https://colorbox.io/)
+      - [colorbox](https://colorbox.io/)
+      - [colorbox](https://colorbox.io/)
+    </details>
+     <details>
+      <summary>⚙️ 高级设置</summary>
+      - [colorbox](https://colorbox.io/)
+      - [colorbox](https://colorbox.io/)
+      - [colorbox](https://colorbox.io/)
+    </details>
+  - 其他功能
+</details>
