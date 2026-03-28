@@ -9,10 +9,10 @@ title: 网址收藏
 
 ## 常用链接
 
-- [Google](https://www.google.com)
-- [GitHub](https://github.com)
-- [Docusaurus](https://docusaurus.io)
-- [colorbox](https://colorbox.io/)
+-🌐 [Google](https://www.google.com)
+-🌐 [GitHub](https://github.com)
+-🌐 [Docusaurus](https://docusaurus.io)
+-🌐 [colorbox](https://colorbox.io/)
 ---
 ###多级菜单实例
 
@@ -39,9 +39,9 @@ title: 网址收藏
   <summary>📁 一级菜单</summary>
     <details>
       <summary>⚙️ 高级设置</summary>
-      - [colorbox](https://colorbox.io/)
-      - [colorbox](https://colorbox.io/)
-      - [colorbox](https://colorbox.io/)
+      -🌐 [colorbox](https://colorbox.io/)<br />
+      -🌐 [colorbox](https://colorbox.io/)
+      -🌐 [colorbox](https://colorbox.io/)
     </details>
      <details>
       <summary>⚙️ 高级设置</summary>
