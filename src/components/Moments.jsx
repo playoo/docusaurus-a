@@ -707,7 +707,7 @@ const Moments = () => {
 
   return (
     <div style={{ 
-      maxWidth: '600px', 
+      maxWidth: '860px', 
       margin: '0 auto', 
       padding: '20px 16px',
       fontFamily: 'sans-serif',
