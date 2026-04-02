@@ -536,7 +536,15 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
-    }
+    },
+    {
+    id: 62,
+    time: '2026年4月2日 7:08',
+    content: '远离喧嚣，是在给精神减负；无人打扰，正好可以专心深耕自己。',
+    images: [],
+    likes: [],
+    comments: []
+      }
   ];
 
   // 图片九宫格
