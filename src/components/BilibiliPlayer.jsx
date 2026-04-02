@@ -40,7 +40,7 @@ export const BilibiliPlayer = ({ bvid }) => {
           onMouseEnter={(e) => e.target.style.background = isPlaying ? '#e0557f' : '#00b8e6'}
           onMouseLeave={(e) => e.target.style.background = isPlaying ? '#f25d8e' : '#00a1d6'}
         >
-          {isPlaying ? '隐藏视频' : '播放视频'}
+          {isPlaying ? '⏫ 隐藏视频' : '⏬ 播放视频'}
         </button>
       </div>
       
