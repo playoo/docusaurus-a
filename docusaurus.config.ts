@@ -36,9 +36,12 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts', // 侧边栏配置文件路径
           editUrl: 'https://github.com/playoo/docusaurus-a/edit/main/', // 编辑文档的链接
+          showLastUpdateTime: true, // 文档页显示更新时间
+          showLastUpdateAuthor: false, // 可选：同时显示作者
         },
         blog: {
           showReadingTime: true, // 显示阅读时长
+          showLastUpdateTime: true, // 博客页也显示更新时间
           blogSidebarCount: 10, // 博客侧边栏显示的文章数量
           blogSidebarTitle: '最新文章', // 博客侧边栏标题
           postsPerPage: 5, // 每页显示的博客文章数
