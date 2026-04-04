@@ -178,7 +178,7 @@ const config: Config = {
       ],
       // 版权信息（动态获取当前年份）
       copyright: `Copyright © ${new Date().getFullYear()} 1002工作室. <a href="https://1002.work">
-<img alt="github" className="Badges" src="https://img.shields.io/github/last-commit/playoo/docusaurus-a?label=上次更新&logo=github&style=for-the-badge" width="135px"/>
+<img alt="github" className="Badges" src="https://img.shields.io/github/last-commit/playoo/docusaurus-a?label=上次更新&logo=github" width="135px"/>
 </a>使用 Docusaurus 构建.`,
     },
     // 代码高亮配置
