@@ -552,7 +552,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
-}
+},{
+    id: 64,
+    time: '2026年4月6日 8:35',
+    content: '还没自己和朋友出去过游玩的儿子还没上车，钱就丢了，今天又狠狠的给他上了一课！',
+    images: [],
+    likes: [],
+    comments: []
+    }
   ];
 
   // 图片九宫格
