@@ -59,6 +59,15 @@ const config: Config = {
   ],
 
   themeConfig: {
+
+
+     docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
+    
     // 社交卡片图片
     image: 'img/docusaurus-social-card.jpg',
     // Replace with your project's social card
