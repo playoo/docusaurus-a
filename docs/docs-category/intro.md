@@ -1,20 +1,26 @@
 ---
 sidebar_label: 🏠 首页
 sidebar_position: 1
-title: ℹ️ 本地怎么启动实时模拟器
+title: ℹ️ 本地docusaurus中常用命令
 ---
 
-**第一步在cmd中输入，按回车键**
+#本地docusaurus中常用命令
+
+**进入项目文件夹my-website的命令**
 ```
 cd my-website
 ```
-------
-**第一步在cmd中输入，按回车键(可选)**
+---
+**进入项目文件夹docusaurus-a的命令**
 ```
 cd docusaurus-a
 ```
-------
-**第二部继续输入后，按回车键**
+---
+**启动项目命令**
 ```
 npm run start
+```
+**安装dousaurus依赖命令**
+```
+npm install
 ```
