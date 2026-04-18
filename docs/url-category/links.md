@@ -318,7 +318,7 @@ export default function CategoryCards() {
               e.currentTarget.style.transform = 'translateY(0)';
               e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04), 0 4px 6px rgba(0,0,0,0.03)';
             }}>
-              <div className="card__header" style={{ color: '#fff', fontWeight: 500, alignSelf: 'flex-start' }}>👓 自然科学</div>
+              <div className="card__header" style={{ color: '#fff', fontWeight: 500, alignSelf: 'flex-start' }}>🔬 自然科学</div>
               <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.9)', alignSelf: 'flex-end' }}>数理 · 化学 · 天文地理</div>
           </div>
         </Link>
