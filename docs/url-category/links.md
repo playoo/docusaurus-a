@@ -70,7 +70,7 @@ export default function CategoryCards() {
 
         {/* 产品运营 */}
         <div className="col col--4">
-          <Link to="/docs/url-category/links" style={{ textDecoration: 'none', height: '100%', display: 'block' }}>
+          <Link to="/docs/url-category/产品运营" style={{ textDecoration: 'none', height: '100%', display: 'block' }}>
             <div 
               ref={(el) => cardRefs.current[0] = el}
               className="card" style={cardBaseStyle}
