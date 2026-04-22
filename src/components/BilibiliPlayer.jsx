@@ -35,7 +35,7 @@ export const BilibiliPlayer = ({ bvid }) => {
             cursor: 'pointer',
             fontSize: '14px',
             fontWeight: '500',
-            transition: 'background 0.2s'
+            transition: 'background 0.2s',
             textAlign: 'left' // 👈 关键：文字左对齐
           }}
           onMouseEnter={(e) => e.target.style.background = isPlaying ? '#e0557f' : '#00b8e6'}
