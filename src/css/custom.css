@@ -54,25 +54,59 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+
 /* 自定义滚动条 */
+/*****************************************
+ * Docusaurus 自定义滚动条样式 (全注释版)
+ * 作用：统一修改页面全局滚动条颜色、大小、圆角
+ * 适配：Chrome / Edge / Safari / Firefox
+ * 适配：亮色模式 + 暗色模式
+ *****************************************/
+
+/* ======================================
+ * 全局基础配置（所有浏览器通用）
+ * ====================================== */
+:root {
+  /* Firefox 专用：滚动条颜色 (滑块颜色, 轨道背景色) */
+  scrollbar-color: #4b5cc4 #f1f1f1;
+}
+
+/* WebKit 内核浏览器专用（Chrome / Edge / Safari）*/
+/* 滚动条整体宽度/高度 */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 18px;    /* 垂直滚动条宽度 */
+  height: 18px;   /* 水平滚动条高度 */
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
+/* 滚动条滑块（可拖动的部分）*/
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-  border-radius: 10px;
+  background-color: #4b5cc4; /* 滑块主颜色 */
+  border-radius: 14px;        /* 滑块圆角，让它更圆润 */
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #ff5252, #3fc7bd);
+/* 滚动条轨道（滑块背后的背景条）*/
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 轨道背景色 */
 }
+
+/* ======================================
+ * 暗色模式下的滚动条样式
+ * ====================================== */
+[data-theme='dark'] {
+  /* Firefox 暗色模式专用颜色 */
+  scrollbar-color: #4b5cc4 #1e1e1e;
+}
+
+/* 暗色模式：滑块颜色 */
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background-color: #4b5cc4;
+}
+
+/* 暗色模式：轨道背景色 */
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+}
+
 
 /* 卡片样式增强 */
 .card {
