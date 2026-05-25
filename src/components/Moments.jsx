@@ -624,6 +624,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+    },
+    {
+    id: 73,
+    time: '2026年5月25日14:30',
+    content: '🌧️今天，开始了为期12天的班组长取证培训，只是天公不作美，下着雨，让我这离家远的人怎么畅快的归家！😌',
+    images: [],
+    likes: [],
+    comments: []
     }
   ];
 
