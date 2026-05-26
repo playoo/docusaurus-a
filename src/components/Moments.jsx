@@ -633,6 +633,15 @@ const Moments = () => {
     likes: [],
     comments: []
     }
+	,
+    {
+    id: 74,
+    time: '2026年5月26日19:13',
+    content: '今天是培训取证的第二天，挺好的，自助餐吃的很不错。趁机改善下伙食也挺好！哈哈！',
+    images: [],
+    likes: [],
+    comments: []
+    }
   ];
 
   // 图片九宫格
