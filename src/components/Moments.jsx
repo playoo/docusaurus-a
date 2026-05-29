@@ -632,16 +632,23 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
-    }
-	,
-    {
+    },
+	{
     id: 74,
     time: '2026年5月26日19:13',
     content: '今天是培训取证的第二天，挺好的，自助餐吃的很不错。趁机改善下伙食也挺好！哈哈！',
     images: [],
     likes: [],
     comments: []
-    }
+    },
+    {
+    id: 75,
+    time: '2026年5月29日7:36',
+    content: '😛今明两天休息两天，培训几天坐着腰疼，休息两天也挺好！',
+    images: [],
+    likes: [],
+    comments: []
+	}
   ];
 
   // 图片九宫格
