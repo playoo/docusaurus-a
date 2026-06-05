@@ -648,6 +648,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+	},
+    {
+    id: 76,
+    time: '2026年6月5日13:50',
+    content: '💪一会儿15:00就要考试了，希望一把过，😉，历时12天的脱产培训终于要结束了，然而又要开始当牛马了！😒',
+    images: [],
+    likes: [],
+    comments: []
 	}
   ];
 
