@@ -656,6 +656,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+	},
+    {
+    id: 77,
+    time: '2026年6月17日21:30',
+    content: '做人不能太贪心，耍小聪明。事情总会往好的方向发展。不是不报，时候未到！🤣，快乐+1',
+    images: [],
+    likes: [],
+    comments: []
 	}
   ];
 
