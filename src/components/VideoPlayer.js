@@ -110,22 +110,27 @@ export default function VideoPlayer({ prefix, suffix, playlist, title }) {
                 {hasPlaylist ? (
                   realPlaylist.map((item, i) => (
                     <button
-                      key={i}
-                      onClick={() => setCurrent(i)}
-                      style={{
-                        padding: '0.5rem 1rem',
-                        border: 'none',
-                        borderRadius: '4px',
-                        color: '#fff',
-                        cursor: 'pointer',
-                        fontSize: '0.9rem',
-                        transition: 'all 0.2s ease',
-                        backgroundColor: i === current ? '#2563eb' : '#6c757d',
-                      }}
-                      disabled={i === current}
-                    >
-                      {item.title}
-                    </button>
+  key={i}
+  onClick={() => setCurrent(i)}
+  style={{
+    padding: '0.5rem 1rem',
+    border: 'none',
+    borderRadius: '4px',
+    color: '#fff',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    transition: 'all 0.2s ease',
+    backgroundColor: i === current ? '#2563eb' : '#6c757d',
+    // 👇 新增这三行
+    flex: '1 0 auto',        // 允许伸缩，不换行时自动填充
+    minWidth: '70px',        // 最小宽度
+    maxWidth: '120px',       // 最大宽度（避免太宽）
+    textAlign: 'center',
+  }}
+  disabled={i === current}
+>
+  {item.title}
+</button>
                   ))
                 ) : (
                   <span style={{ color: '#6c757d' }}>暂无分集</span>
