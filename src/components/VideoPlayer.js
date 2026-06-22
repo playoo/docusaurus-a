@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-export default function VideoPlayer({ prefix, suffix, playlist, title }) {
+// 内置默认prefix：https://lziplayer.com/?url=
+export default function VideoPlayer({
+  prefix = "https://lziplayer.com/?url=",
+  suffix,
+  playlist,
+  title
+}) {
   const [current, setCurrent] = useState(0);
 
   // 解析：兼容 字符串($分隔) / 对象 两种格式
@@ -110,27 +116,26 @@ export default function VideoPlayer({ prefix, suffix, playlist, title }) {
                 {hasPlaylist ? (
                   realPlaylist.map((item, i) => (
                     <button
-  key={i}
-  onClick={() => setCurrent(i)}
-  style={{
-    padding: '0.5rem 1rem',
-    border: 'none',
-    borderRadius: '4px',
-    color: '#fff',
-    cursor: 'pointer',
-    fontSize: '0.9rem',
-    transition: 'all 0.2s ease',
-    backgroundColor: i === current ? '#2563eb' : '#6c757d',
-    // 👇 新增这三行
-    flex: '1 0 auto',        // 允许伸缩，不换行时自动填充
-    minWidth: '70px',        // 最小宽度
-    maxWidth: '120px',       // 最大宽度（避免太宽）
-    textAlign: 'center',
-  }}
-  disabled={i === current}
->
-  {item.title}
-</button>
+                      key={i}
+                      onClick={() => setCurrent(i)}
+                      style={{
+                        padding: '0.5rem 1rem',
+                        border: 'none',
+                        borderRadius: '4px',
+                        color: '#fff',
+                        cursor: 'pointer',
+                        fontSize: '0.9rem',
+                        transition: 'all 0.2s ease',
+                        backgroundColor: i === current ? '#2563eb' : '#6c757d',
+                        flex: '1 0 auto',
+                        minWidth: '70px',
+                        maxWidth: '120px',
+                        textAlign: 'center',
+                      }}
+                      disabled={i === current}
+                    >
+                      {item.title}
+                    </button>
                   ))
                 ) : (
                   <span style={{ color: '#6c757d' }}>暂无分集</span>
