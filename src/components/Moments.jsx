@@ -672,7 +672,7 @@ const Moments = () => {
     images: ['img/20260623.webp'],
     likes: [],
     comments: []
-  },
+  }
   ];
 
   // 图片九宫格
