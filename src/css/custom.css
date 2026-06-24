@@ -164,3 +164,8 @@ html[data-theme="dark"] .blog-post-page h1[class*="title"] {
   width: 200px;
   height: 200px;
 }
+
+/* ========== 调整内容部分宽度 ========== */
+.container {
+  max-width: 1600px !important; 
+}
