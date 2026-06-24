@@ -8,7 +8,7 @@ export default function VideoPlayer({
 }) {
   const [current, setCurrent] = useState(0);
 
-  // 解析播放列表
+  // 解析播放列表：兼容 字符串($分隔) / 对象 两种格式
   const realPlaylist = useMemo(() => {
     if (!Array.isArray(playlist)) return [];
     return playlist.map(item => {
@@ -22,21 +22,21 @@ export default function VideoPlayer({
 
   const hasPlaylist = realPlaylist.length > 0;
 
-  // 切换列表重置
+  // 切换剧集列表时，重置为第一集
   useEffect(() => {
     setCurrent(0);
   }, [playlist]);
 
   return (
-    <div style={{ width: '100%', maxWidth: '100%' }}>
+    <div style={{ width: '100%', maxWidth: '100%', boxSizing: 'border-box' }}>
       
-      {/* 1. 播放器外框 */}
+      {/* 1. 播放器区域 (16:9 比例) */}
       <div style={{
         position: 'relative',
         width: '100%',
         paddingTop: '56.25%',
         background: '#000',
-        borderRadius: '4px 4px 0 0',
+        borderRadius: '8px 8px 0 0',
         overflow: 'hidden',
       }}>
         {hasPlaylist && realPlaylist[current]?.url ? (
@@ -51,6 +51,7 @@ export default function VideoPlayer({
             allowFullScreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             sandbox="allow-same-origin allow-scripts"
+            title={`${title} - ${realPlaylist[current].title}`}
           />
         ) : (
           <div style={{
@@ -58,23 +59,23 @@ export default function VideoPlayer({
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             color: '#fff', fontSize: '1rem'
           }}>
-            暂无视频播放列表 (请检查URL)
+            暂无视频播放列表
           </div>
         )}
       </div>
 
-      {/* 2. 分集表格 + 标题 区域 (宽度100%) */}
+      {/* 2. 分集列表区域 (和播放器完全等宽) */}
       <div style={{
         width: '100%',
         border: '1px solid #e5e7eb',
-        borderTop: 'none',
-        borderRadius: '0 0 4px 4px',
+        borderTop: 'none', // 无缝连接播放器
+        borderRadius: '0 0 8px 8px',
         background: '#fff',
         padding: '0 0 1rem 0',
         boxSizing: 'border-box'
       }}>
         
-        {/* 标题行 */}
+        {/* 2.1 标题行 */}
         <div style={{
           padding: '1rem 1rem',
           borderBottom: '1px solid #e5e7eb',
@@ -92,13 +93,24 @@ export default function VideoPlayer({
            {title}
         </div>
 
-        {/* 按钮行 */}
+        {/* 2.2 按钮行 (核心修改：利用 CSS 媒体查询控制) */}
         <div style={{
-          display: 'flex',
-          flexWrap: 'wrap',
+          display: 'grid',
+          // ★★★★★ 电脑端默认：每行铺满5个，具体根据屏幕宽度自适应 ★★★★★
+          gridTemplateColumns: 'repeat(auto-fill, minmax(80px, 1fr))', 
           gap: '0.5rem',
-          padding: '1rem 1rem 0 1rem', // 按钮区域的内边距
+          padding: '1rem 1rem 0 1rem',
         }}>
+          {/* ★★★★★ 在 style 标签里插入媒体查询，覆盖手机端行为 ★★★★★ */}
+          <style>{`
+            /* 当屏幕宽度小于 480px (手机) 时，强制每行 4 个 */
+            @media (max-width: 480px) {
+              .episode-grid {
+                gridTemplateColumns: repeat(4, 1fr) !important;
+              }
+            }
+          `}</style>
+
           {hasPlaylist ? (
             realPlaylist.map((item, i) => {
               const isCurrent = i === current;
@@ -108,14 +120,14 @@ export default function VideoPlayer({
                   onClick={() => setCurrent(i)}
                   disabled={isCurrent}
                   style={{
-                    padding: '0.5rem 1rem',
+                    padding: '0.5rem 0',
                     border: 'none',
                     borderRadius: '4px',
                     color: '#fff',
                     fontSize: '0.9rem',
                     cursor: isCurrent ? 'default' : 'pointer',
-                    backgroundColor: isCurrent ? '#2563eb' : '#6c757d', // 激活蓝，禁用灰
-                    minWidth: '65px',
+                    backgroundColor: isCurrent ? '#2563eb' : '#6c757d',
+                    width: '100%',
                     textAlign: 'center',
                     transition: 'background 0.2s'
                   }}
@@ -127,7 +139,9 @@ export default function VideoPlayer({
               );
             })
           ) : (
-            <span style={{ color: '#6c757d' }}>暂无分集数据</span>
+            <span style={{ color: '#6c757d', gridColumn: '1 / -1', padding: '0.5rem 0' }}>
+              暂无分集数据
+            </span>
           )}
         </div>
 
