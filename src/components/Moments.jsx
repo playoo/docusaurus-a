@@ -549,7 +549,7 @@
     images: ['img/20260623.webp'],
     likes: [],
     comments: []
-  },
+    },
     {
     id: 79,
     time: '2026年6月30日 9:12',
@@ -557,7 +557,7 @@
     images: [],
     likes: [],
     comments: []
-		},
+	}
   ];
 
   // 图片九宫格
