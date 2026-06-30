@@ -885,7 +885,7 @@ const Moments = () => {
         boxShadow: '0 2px 8px rgba(0,0,0,0.1)' // 增加阴影，提升层次感
       }}>
         <h1 style={{ fontSize: '24px', fontWeight: 600, margin: 0, textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>【碎碎念】</h1>
-        <p style={{ color: 'rgba(255,255,255,0.9)', margin: '8px 0 0 0', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>美好的心情是人生唯一不能剥夺的财富！</p>
+        <p style={{ color: 'rgba(255,255,255,0.9)', margin: '8px 0 0 0', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>一份好心情，是人生唯一不能被剥夺的财富！</p>
       </div>
       
       {momentsData.map(item => (
