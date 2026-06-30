@@ -1,127 +1,4 @@
-// src/components/Moments.jsx
-import React, { useState } from 'react';
-// 可选：如果有自定义背景图片，先导入
-// import headerBg from '../assets/header-bg.jpg';
-
-const Moments = () => {
-  const [previewImage, setPreviewImage] = useState(null); // 图片预览
-
-  const momentsData = [
-      // 2025年6月19日（最早）
-  {
-    id: 1,
-    time: '2025年6月19日',
-    content: '📌今天去单位学习,离上班没多久了，然后也下着雨就不回家了。',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年6月27日
-  {
-    id: 2,
-    time: '2025年6月27日',
-    content: '💬一个人放下地东西越多，他就越富有。',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  {
-    id: 3,
-    time: '2025年6月27日',
-    content: '💪幽门螺旋杆菌，我要战胜你。',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年6月28日
-  {
-    id: 4,
-    time: '2025年6月28日',
-    content: '💬抱怨是对服从的发泄，闹腾的是软蛋，沉默的才是犟种。',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年6月29日
-  {
-    id: 5,
-    time: '2025年6月29日',
-    content: '🚬如果事与愿违，请相信上帝另有安排。一切都是最好的安排。',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年6月30日
-  {
-    id: 6,
-    time: '2025年6月30日',
-    content: '㊗️今天休息，孩子6年级毕业典礼，挺好的开端。',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年7月4日
-  {
-    id: 7,
-    time: '2025年7月4日',
-    content: '💪备考7月24日班组长抽考！',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年7月15日
-  {
-    id: 8,
-    time: '2025年7月15日',
-    content: '💬好运总是要先捉弄一番，然后才向着坚忍不拔者微笑的。',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年7月28日
-  {
-    id: 9,
-    time: '2025年7月28日',
-    content: '✅今日更新一些教育资源',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年8月2日
-  {
-    id: 10,
-    time: '2025年8月2日',
-    content: '✅今天在家吃个火锅，那个酸爽😂',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年8月8日
-  {
-    id: 11,
-    time: '2025年8月8日',
-    content: '✅今天那口子外出学习,希望一切顺利！',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年8月20日
-  {
-    id: 12,
-    time: '2025年8月20日',
-    content: '✅幽门螺杆菌over!🤟',
-    images: [],
-    likes: [],
-    comments: []
-  },
-  // 2025年8月23日
-  {
-    id: 13,
-    time: '2025年8月23日',
-    content: '✅今日孩子们报道，希望孩子们有个好的开端，未来可期！',
-    images: [],
-    likes: [],
-    comments: []
+ []
   },
   {
     id: 14,
@@ -672,7 +549,15 @@ const Moments = () => {
     images: ['img/20260623.webp'],
     likes: [],
     comments: []
-  }
+  },
+    {
+    id: 79,
+    time: '2026年6月30日 9:12',
+    content: 上班时胳膊被水泥烧伤了，回家先抹的碘伏，第二天抹的芦荟胶，昨天有去诊所🏥拿的烧伤💊，好吧，又该不舒服一阵了！',
+    images: [],
+    likes: [],
+    comments: []
+		}
   ];
 
   // 图片九宫格
