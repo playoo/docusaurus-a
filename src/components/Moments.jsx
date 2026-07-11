@@ -688,7 +688,15 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
-	  }
+	  },
+    {
+    id: 81,
+    time: '2026年7月11日 13:15',
+    content:'🎉今天把坏了有半月有余的电风扇修好了！✌️✌️✌️',
+    images: [],
+    likes: [],
+    comments: []
+	}
   ];
 
   // 图片九宫格
