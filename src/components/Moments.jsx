@@ -688,11 +688,19 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
-	  },
+	},
     {
     id: 81,
     time: '2026年7月11日 13:15',
     content:'🎉今天把坏了有半月有余的电风扇修好了！✌️✌️✌️',
+    images: [],
+    likes: [],
+    comments: []
+	},
+    {
+    id: 82,
+    time: '2026年7月25日 6:48',
+    content:'人到了一定年龄，活的已经不是日子，而是:被岁月沉淀的心境。与世界言和，与自己和解。自行，自醒，自清欢！',
     images: [],
     likes: [],
     comments: []
