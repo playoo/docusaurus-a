@@ -752,6 +752,14 @@ const Moments = () => {
     images: ['img/20268111.jpeg','img/20268112.jpeg','img/20268113.jpeg','img/20268114.jpeg'],
     likes: [],
     comments: []
+},
+{
+    id: 89,
+    time: '2026年8月15日 11:09',
+    content: '✅有时候，经验让我们少走了很多弯路，却也可能让我们错过一些最简单的答案。',
+    images: [],
+    likes: [],
+    comments: []
 }
   ];
 
