@@ -86,7 +86,7 @@ hide_table_of_contents: true
 ## 📫 联系我
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', margin: '2rem 0' }}>
-  <a href="https://github.com/your-username" style={{ textDecoration: 'none' }}>
+  <a href="https://github.com/playoo" style={{ textDecoration: 'none' }}>
     <div style={{ textAlign: 'center' }}>
       <div style={{ fontSize: '2rem' }}>🐙</div>
       <div>GitHub</div>
