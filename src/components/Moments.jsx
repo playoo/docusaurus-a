@@ -764,7 +764,7 @@ const Moments = () => {
 {
     id: 90,
     time: '2026年8月17日 21:39',
-    content: '✅有时候，经验让我们少走了很多弯路，却也可能让我们错过一些最简单的答案。',
+    content: '✅如题。',
     images: ['img/20260817.webp'],
     likes: [],
     comments: []
