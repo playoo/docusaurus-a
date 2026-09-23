@@ -1,9 +1,9 @@
 ---
-title: 视频播放
-sidebar_label: 视频播放
+title: B站视频播放
+sidebar_label: B站视频播放
 ---
 
-# B站视频播放器
+# B站视频播放
 
 以下是B站视频播放示例：
 

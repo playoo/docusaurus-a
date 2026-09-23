@@ -1,5 +1,5 @@
 ---
-sidebar_label: ☯️ 99 Emoji大全
+sidebar_label: ☯️ Emoji大全
 sidebar_position: 99
 ---
 
