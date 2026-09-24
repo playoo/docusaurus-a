@@ -784,6 +784,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+},
+{
+    id: 93,
+    time: '2026年9月24日 18:49',
+    content: '㊗️今天瓦斯抽采复训理论考试通过，顺便帮两个同事通过考试，心里好高兴！🙃',
+    images: [],
+    likes: [],
+    comments: []
 }
 	  
   ];
