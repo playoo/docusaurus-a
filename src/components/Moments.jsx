@@ -792,6 +792,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+},
+{
+    id: 94,
+    time: '2026年9月27日 12:42',
+    content: '🤔照顾好自己，世界才会属于你。风雨由天，快乐由己。保持微笑，一路向前。会有一束光的出现，照亮你的春夏秋冬。',
+    images: [],
+    likes: [],
+    comments: []
 }
 	  
   ];
