@@ -1,6 +1,6 @@
 ---
-title: B站视频播放
-sidebar_label: B站视频播放
+title: 🅱️B站视频播放
+sidebar_label: 🅱️B站视频播放
 ---
 
 # B站视频播放
