@@ -805,7 +805,7 @@ const Moments = () => {
     id: 95,
     time: '2026年9月29日 08:40',
     content: '💬如题！',
-    images: ['img/202609291.jpeg','img/202609292.jpeg'],
+    images: ['img/202609291.jpg','img/202609292.jpg'],
     likes: [],
     comments: []
 }
