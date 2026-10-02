@@ -808,6 +808,14 @@ const Moments = () => {
     images: ['img/202609291.jpg','img/202609292.jpg'],
     likes: [],
     comments: []
+},
+{
+    id: 96,
+    time: '2026年10月2日 14:40',
+    content: '😉也记得，幸福者懂得退让，少一分争执，多一份从容。！',
+    images: [],
+    likes: [],
+    comments: []
 }
 	  
   ];
