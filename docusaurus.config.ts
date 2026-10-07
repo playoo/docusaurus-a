@@ -132,13 +132,14 @@ const config: Config = {
           label: '📁网址类',
         },
         { to: '/blog', label: '📝博客', position: 'left' },
+		   { to: '/gallery', label: '📚相册', position: 'right' },
         { to: '/thoughts', label: '📜碎碎念', position: 'right' },
         { to: '/about', label: '📄关于', position: 'right' },
-        {
-          href: 'https://github.com/playoo/docusaurus-a',
-          label: '♐GitHub',
-          position: 'right',
-        },
+        //{
+        //  href: 'https://github.com/playoo/docusaurus-a',
+        //  label: '♐GitHub',
+         // position: 'right',
+        // },
       ],
     },
     // 页脚配置
