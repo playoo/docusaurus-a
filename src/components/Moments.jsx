@@ -816,6 +816,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+},
+{
+    id: 97,
+    time: '2026年10月2日 14:40',
+    content: '🤐人生有时就象在拉屎，明明已经很努力了可出来的只是一个屁！',
+    images: [],
+    likes: [],
+    comments: []
 }
 	  
   ];
