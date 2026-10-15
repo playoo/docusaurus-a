@@ -832,6 +832,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+},
+{
+    id: 99,
+    time: '2026年10月15日 13:50',
+    content: '🤔现在才懂，能吃饱，能睡好，身上没大病，心里没大事，这就够了。',
+    images: [],
+    likes: [],
+    comments: []
 }
 
 	  
