@@ -190,7 +190,7 @@ export default function CategoryCards() {
 
         {/* 软件游戏 */}
         <div className="col col--4">
-          <Link to="/docs/category/%EF%B8%8F-07-软件游戏" style={{ textDecoration: 'none', height: '100%', display: 'block' }}>
+          <Link to="/docs/category/-07-软件游戏" style={{ textDecoration: 'none', height: '100%', display: 'block' }}>
             <div 
               ref={(el) => cardRefs.current[6] = el}
               className="card" style={cardBaseStyle}
@@ -210,7 +210,7 @@ export default function CategoryCards() {
 
         {/* 实用工具 */}
         <div className="col col--4">
-          <Link to="/docs/category/%EF%B8%8F-08-实用工具" style={{ textDecoration: 'none', height: '100%', display: 'block' }}>
+          <Link to="/docs/category/-08-实用工具" style={{ textDecoration: 'none', height: '100%', display: 'block' }}>
             <div 
               ref={(el) => cardRefs.current[7] = el}
               className="card" style={cardBaseStyle}
