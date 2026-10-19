@@ -1,5 +1,5 @@
 ﻿---
-sidebar_label:  ℹ️ 常用命令
+sidebar_label:  ℹ️ docusaurus常用命令
 sidebar_position: 1
 title: ℹ️ 本地docusaurus中常用命令
 ---
