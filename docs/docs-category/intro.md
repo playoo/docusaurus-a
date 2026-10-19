@@ -222,7 +222,7 @@ export default function CategoryCards() {
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04), 0 4px 6px rgba(0,0,0,0.03)';
               }}>
-                <div style={{ color: '#fff', fontWeight: 500, fontSize: '1.3rem' }}>🧑‍🎓 实用工具</div>
+                <div style={{ color: '#fff', fontWeight: 500, fontSize: '1.3rem' }}>🧰 实用工具</div>
                 <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.9)', textAlign: 'right' }}>效率工具 · 转换 · 系统增强</div>
             </div>
           </Link>
