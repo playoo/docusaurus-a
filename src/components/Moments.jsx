@@ -1023,7 +1023,7 @@ const Moments = () => {
     <div style={{ 
       maxWidth: '860px', 
       margin: '0 auto', 
-      padding: '20px 16px',
+      padding: '0px 0px',
       fontFamily: 'sans-serif',
       backgroundColor: '#f5f5f5',
       minHeight: '100vh',
@@ -1036,7 +1036,7 @@ const Moments = () => {
         padding: '24px 16px', // 增加内边距，让背景更明显
         borderRadius: '8px',
         // 方案1：渐变背景（推荐）
-        //background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+       // background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
         // 方案2：纯色背景
         // background: '#0884ff',
         // 方案3：背景图片（取消注释并替换图片地址）
@@ -1046,7 +1046,7 @@ const Moments = () => {
         color: 'white', // 文字改为白色，适配背景
         boxShadow: '0 2px 8px rgba(0,0,0,0.1)' // 增加阴影，提升层次感
       }}>
-        <h1 style={{ fontSize: '24px', fontWeight: 600, margin: 0, textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>【碎碎念】</h1>
+        <h1 style={{ fontSize: '30px', fontWeight: 600, margin: 0, textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>【碎碎念】</h1>
         <p style={{ color: 'rgba(255,255,255,0.9)', margin: '8px 0 0 0', textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>愿你每天都有好心情，生活明朗，万物可爱。 ✦</p>
       </div>
       
