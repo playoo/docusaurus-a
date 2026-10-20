@@ -6,30 +6,44 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={clsx('hero__title', styles.heroTitle)}>
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={clsx('hero__subtitle', styles.heroSubtitle)}>
+          {siteConfig.tagline}
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx('button button--lg', styles.heroButton)}
             to="/docs/docs-category/intro">
-            点击进入↗️我的文档类📗
+          
+            技术文档 📗
           </Link>
-        </div>
-        <br/>
-        <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx('button button--lg', styles.heroButton)}
             to="/docs/url-category/links">
-            点击进入↗️我的收藏类📜
+            
+            资源收藏 📜
+          </Link>
+		  <Link
+            className={clsx('button button--lg', styles.heroButton)}
+            to="/docs/docs-category/intro">
+          
+            技术文档 📗
+          </Link>
+          <Link
+            className={clsx('button button--lg', styles.heroButton)}
+            to="/docs/url-category/links">
+            
+            资源收藏 📜
           </Link>
         </div>
       </div>
@@ -37,8 +51,24 @@ function HomepageHeader() {
   );
 }
 
-// 修复：正确定义函数参数（使用空对象表示接收props但暂不使用）
-export default function Home({}: { [key: string]: unknown }): ReactNode {
+function QuickLinks() {
+  return (
+    <div className={styles.quickLinks}>
+      <Link className={styles.card} to="/docs/docs-category/intro">
+        <span className={styles.cardIcon}>📗</span>
+        <h3>文档中心</h3>
+        <p>系统整理的技术笔记与分类文档</p>
+      </Link>
+      <Link className={styles.card} to="/docs/url-category/links">
+        <span className={styles.cardIcon}>📜</span>
+        <h3>收藏夹</h3>
+        <p>精选的链接与资源合集</p>
+      </Link>
+    </div>
+  );
+}
+
+export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
@@ -46,6 +76,7 @@ export default function Home({}: { [key: string]: unknown }): ReactNode {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <QuickLinks />
         <HomepageFeatures />
       </main>
     </Layout>

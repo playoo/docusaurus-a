@@ -1,0 +1,55 @@
+﻿---
+sidebar_position: 2
+---
+import VideoPlayer from '@site/src/components/VideoPlayer';
+
+<VideoPlayer
+  title="脱口秀和Ta的朋友们第一季"
+  playlist={[
+    "再看亿遍$https://vod.feifei-kan.com/20240814/30436_99a59448/index.m3u8",
+    "第20240813期$https://vod.feifei-kan.com/20240814/30435_5c8bd082/index.m3u8",
+    "第20240814期$https://vod.feifei-kan.com/20240814/30434_148ba1ac/index.m3u8",
+    "第20240820期$https://vod.feifei-kan.com/20240820/30660_4353da4d/index.m3u8",
+    "第20240821期$https://vod.feifei-kan.com/20240821/30691_08723e0c/index.m3u8",
+    "第20240821期纯享版$https://vod.feifei-kan.com/20240821/30692_5494bc89/index.m3u8",
+    "第20240823期$https://vod.feifei-kan.com/20240823/30785_0f1f1046/index.m3u8",
+    "第20240827期$https://vod.feifei-kan.com/20240827/30917_7f272b86/index.m3u8",
+    "第20240828期$https://vod.feifei-kan.com/20240828/30950_d4ce8d58/index.m3u8",
+    "第20240829期$https://vod.feifei-kan.com/20240830/31025_6551bcae/index.m3u8",
+    "第20240830期$https://vod.feifei-kan.com/20240831/31079_c9674283/index.m3u8",
+    "第20240903期$https://vod.feifei-kan.com/20240903/31200_eb22f88f/index.m3u8",
+    "第20240904期$https://vod.feifei-kan.com/20240904/31237_2ca2f288/index.m3u8",
+    "第20240906期$https://vod.feifei-kan.com/20240906/31297_0f9ef8cb/index.m3u8",
+    "第20240910期$https://vod.feifei-kan.com/20240910/31436_8abb69b3/index.m3u8",
+    "第20240911期$https://vod.feifei-kan.com/20240911/31480_87688e64/index.m3u8",
+    "第20240913期$https://vod.feifei-kan.com/20240914/31571_71395be6/index.m3u8",
+    "第20240917期$https://vod.feifei-kan.com/20240917/31683_cd6539b0/index.m3u8",
+    "第20240917期别加更$https://vod.feifei-kan.com/20240917/31684_e7ff9f6c/index.m3u8",
+    "第20240920期$https://vod.feifei-kan.com/20240920/31773_1f910e95/index.m3u8",
+    "第20240924期$https://vod.feifei-kan.com/20240924/31896_9cb3bc4b/index.m3u8",
+    "第20240925期$https://vod.feifei-kan.com/20240925/31924_edbac39d/index.m3u8",
+    "第20241001期$https://vod.feifei-kan.com/20241001/32121_640a4436/index.m3u8",
+    "第20241002期$https://vod.feifei-kan.com/20241002/32151_eb901025/index.m3u8",
+    "第20241004期$https://vod.feifei-kan.com/20241005/32224_053ae68f/index.m3u8",
+    "第20241005期$https://vod.feifei-kan.com/20241006/32264_4ddd8fd5/index.m3u8",
+    "第20241006期$https://vod.feifei-kan.com/20241006/32265_d4debfe3/index.m3u8",
+    "第20241007期$https://vod.feifei-kan.com/20241007/32294_7d0bbf7a/index.m3u8",
+    "第20241008期$https://vod.feifei-kan.com/20241008/32326_5d904c05/index.m3u8",
+    "第20241009期$https://vod.feifei-kan.com/20241009/32346_949e6667/index.m3u8",
+    "第20241011期$https://vod.feifei-kan.com/20241012/32426_fac99c77/index.m3u8",
+    "第20241015期$https://vod.feifei-kan.com/20241015/32515_039b28c0/index.m3u8",
+    "第20241016期$https://vod.feifei-kan.com/20241016/32561_5f937e78/index.m3u8",
+    "第20241018期$https://vod.feifei-kan.com/20241018/32644_7647ad38/index.m3u8",
+    "第20241022期加更$https://vod.feifei-kan.com/20241022/32755_722781a5/index.m3u8",
+    "第20241022期$https://vod.feifei-kan.com/20241022/32761_4531d349/index.m3u8",
+    "第20241023期$https://vod.feifei-kan.com/20241023/32784_820d7297/index.m3u8",
+    "第20241026期回顾上$https://vod.feifei-kan.com/20241026/32889_e2ac4719/index.m3u8",
+    "第20241026期回顾下$https://vod.feifei-kan.com/20241026/32890_b44bb13a/index.m3u8",
+    "第20241027期特辑上$https://vod.feifei-kan.com/20241027/32937_c205a106/index.m3u8",
+    "第20241027期特辑下$https://vod.feifei-kan.com/20241027/32938_c57308db/index.m3u8",
+    "第20241029期特辑$https://vod.feifei-kan.com/20241029/32982_b6ab849c/index.m3u8",
+    "第20241030期特辑$https://vod.feifei-kan.com/20241030/33004_1741c0f8/index.m3u8",
+    "第20241031期特辑$https://vod.feifei-kan.com/20241101/33072_cf91d0f0/index.m3u8",
+    "第20241101期特辑$https://vod.feifei-kan.com/20241101/33073_f9941311/index.m3u8",
+  ]}
+/>

@@ -1,0 +1,52 @@
+﻿---
+sidebar_position: 3
+---
+import VideoPlayer from '@site/src/components/VideoPlayer';
+
+<VideoPlayer
+  title="脱口秀和Ta的朋友们第二季"
+  playlist={[
+    "第20250627期上$https://vip.ffzy-online3.com/20250627/37956_ac82ed7d/index.m3u8",
+    "第20250627期下$https://vip.ffzy-online3.com/20250627/37957_4333c597/index.m3u8",
+    "第20250628期上$https://vip.ffzy-online3.com/20250628/37986_67577e94/index.m3u8",
+    "第20250628期下$https://vip.ffzy-online3.com/20250628/37987_889198b3/index.m3u8",
+    "第20250630期$https://vip.ffzy-online3.com/20250630/38037_eaabc958/index.m3u8",
+    "第20250701期$https://vip.ffzy-online3.com/20250701/38064_e37923cb/index.m3u8",
+    "第20250704期上$https://vip.ffzy-online3.com/20250704/38120_790cfa7b/index.m3u8",
+    "第20250704期下$https://vip.ffzy-online3.com/20250704/38121_e8f530f3/index.m3u8",
+    "第20250705期上$https://vip.ffzy-online3.com/20250705/38152_4b307e0b/index.m3u8",
+    "第20250705期下$https://vip.ffzy-online3.com/20250705/38153_1bdbe1fb/index.m3u8",
+    "第20250708期$https://vip.ffzy-online3.com/20250708/38226_1c5581e1/index.m3u8",
+    "第20250711期$https://vip.ffzy-online3.com/20250711/38289_619d756c/index.m3u8",
+    "第20250712期上$https://vip.ffzy-online3.com/20250712/38334_f5ebe223/index.m3u8",
+    "第20250712期下$https://vip.ffzy-online3.com/20250712/38335_34a2de5c/index.m3u8",
+    "第20250714期$https://vip.ffzy-online3.com/20250714/38377_72824049/index.m3u8",
+    "第20250718期$https://vip.ffzy-online3.com/20250718/38470_e5921a80/index.m3u8",
+    "第20250719期$https://vip.ffzy-online3.com/20250719/38503_93b5c9eb/index.m3u8",
+    "第20250721期$https://vip.ffzy-online1.com/20250721/55763_1f9d12ef/index.m3u8",
+    "第20250725期$https://vip.ffzy-online1.com/20250725/55854_866a709e/index.m3u8",
+    "第20250726期$https://vip.ffzy-online1.com/20250726/55888_c44daa9a/index.m3u8",
+    "第20250728期$https://vip.ffzy-online1.com/20250728/55943_e7aa6927/index.m3u8",
+    "第20250731期$https://vip.ffzy-online1.com/20250801/56035_5a9c09d6/index.m3u8",
+    "第20250802期$https://vip.ffzy-online1.com/20250802/56068_6ab897f4/index.m3u8",
+    "第20250804期$https://vip.ffzy-online1.com/20250804/56140_71db2e20/index.m3u8",
+    "第20250805期$https://vip.ffzy-online1.com/20250805/56169_b1b47cd8/index.m3u8",
+    "第20250806期$https://vip.ffzy-online1.com/20250806/56188_0dfe3f34/index.m3u8",
+    "第20250808期$https://vip.ffzy-online1.com/20250808/56229_6846e5a9/index.m3u8",
+    "第20250808期纯享$https://vip.ffzy-online1.com/20250808/56230_dd72c1eb/index.m3u8",
+    "第20250809期$https://vip.ffzy-online1.com/20250809/56273_d11f1b8c/index.m3u8",
+    "第20250809期纯享$https://vip.ffzy-online1.com/20250809/56274_84328fbe/index.m3u8",
+    "第20250811期$https://vip.ffzy-online1.com/20250811/56331_f20c89ce/index.m3u8",
+    "第20250812期$https://vip.ffzy-online1.com/20250812/56365_e944a5f7/index.m3u8",
+    "第20250815期$https://vip.ffzy-online1.com/20250815/56445_e732a37e/index.m3u8",
+    "第20250816期$https://vip.ffzy-online1.com/20250816/56487_a27eec59/index.m3u8",
+    "第20250818期$https://vip.ffzy-online1.com/20250818/56537_99bdd2e3/index.m3u8",
+    "第20250819期$https://vip.ffzy-online1.com/20250819/56562_0f69f766/index.m3u8",
+    "第20250822期$https://vip.ffzy-online1.com/20250822/56639_b2d08c82/index.m3u8",
+    "第20250822期纯享$https://vip.ffzy-online1.com/20250822/56640_32d190bc/index.m3u8",
+    "第20250825期$https://vip.ffzy-online1.com/20250825/56723_4c53e9cc/index.m3u8",
+    "第20250826期$https://vip.ffzy-online1.com/20250826/56743_c43afd08/index.m3u8",
+    "第20250829期上$https://vip.ffzy-online1.com/20250829/56844_dedc7340/index.m3u8",
+    "第20250829期下$https://vip.ffzy-online1.com/20250829/56845_79f9295a/index.m3u8",
+  ]}
+/>

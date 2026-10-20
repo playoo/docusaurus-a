@@ -3,16 +3,20 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+import MountainSvg from '@site/static/img/undraw_docusaurus_mountain.svg';
+import TreeSvg from '@site/static/img/undraw_docusaurus_tree.svg';
+import ReactSvg from '@site/static/img/undraw_docusaurus_react.svg';
+
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: '易用',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: MountainSvg,
     description: (
       <>
         Docusaurus 从零开始设计，便于安装和快速运行你的网站。
@@ -21,7 +25,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '专注于重要的事情',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: TreeSvg,
     description: (
       <>
         Docusaurus 让你专注于文件，我们来做家务。可以把你的文档移到文档目录里。
@@ -30,7 +34,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '由 React 驱动',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: ReactSvg,
     description: (
       <>
         通过重复使用 React 来扩展或自定义你的网站布局。Docusaurus 可以在重复使用相同的页眉和页脚的同时进行扩展。
@@ -43,7 +47,11 @@ function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg
+          className={styles.featureSvg}
+          role="img"
+          aria-label={title}
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -53,13 +61,13 @@ function Feature({title, Svg, description}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((props) => (
+            <Feature key={props.title} {...props} />
           ))}
         </div>
       </div>
