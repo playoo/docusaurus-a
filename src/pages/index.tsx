@@ -35,16 +35,23 @@ function HomepageHeader() {
           </Link>
 		  <Link
             className={clsx('button button--lg', styles.heroButton)}
-            to="/docs/docs-category/intro">
+            to="/blog">
           
-            技术文档 📗
+            博客 📝
           </Link>
           <Link
             className={clsx('button button--lg', styles.heroButton)}
-            to="/docs/url-category/links">
+            to="/gallery">
             
-            资源收藏 📜
+            相册 📷
           </Link>
+		   <Link
+            className={clsx('button button--lg', styles.heroButton)}
+            to="/thoughts">
+            
+            碎碎念 🎏
+          </Link>
+		 
         </div>
       </div>
     </header>

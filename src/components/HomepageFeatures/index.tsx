@@ -1,5 +1,4 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
+import {useMemo, type ReactNode} from 'react';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -10,58 +9,63 @@ import ReactSvg from '@site/static/img/undraw_docusaurus_react.svg';
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  description: ReactNode;
+  quotes: string[]; // 励志句子池
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '易用',
+    title: '努力🥇',
     Svg: MountainSvg,
-    description: (
-      <>
-        Docusaurus 从零开始设计，便于安装和快速运行你的网站。
-      </>
-    ),
+    quotes: [
+      '你只管努力，剩下的交给时间。',
+      '星光不问赶路人，时光不负有心人。',
+      '所有的努力，都不会被辜负。',
+      '越努力，越幸运。',
+    ],
   },
   {
-    title: '专注于重要的事情',
+    title: '坚持🥈',
     Svg: TreeSvg,
-    description: (
-      <>
-        Docusaurus 让你专注于文件，我们来做家务。可以把你的文档移到文档目录里。
-      </>
-    ),
+    quotes: [
+      '坚持一件能让自己变好的事，的确不容易。',
+      '打磨自己的过程总是充满艰难和迷茫。',
+      '只要你朝前走，即使失败，也是经历。',
+      '日拱一卒，功不唐捐。',
+    ],
   },
   {
-    title: '由 React 驱动',
+    title: '行动🥉',
     Svg: ReactSvg,
-    description: (
-      <>
-        通过重复使用 React 来扩展或自定义你的网站布局。Docusaurus 可以在重复使用相同的页眉和页脚的同时进行扩展。
-      </>
-    ),
+    quotes: [
+      '别想了，去做。',
+      '行动，是改变唯一的入口。',
+      '想一千次，不如做一次。',
+      '种一棵树最好的时间是十年前，其次是现在。',
+    ],
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+// 随机取一条
+const pick = <T,>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
+
+function Feature({title, Svg, quotes}: FeatureItem) {
+  // useMemo 保证同一次渲染内句子稳定，不会因父组件重渲染而跳变
+  const quote = useMemo(() => pick(quotes), [quotes]);
+
   return (
-    <div className={clsx('col col--4')}>
+    <div className="col col--4">
       <div className="text--center">
-        <Svg
-          className={styles.featureSvg}
-          role="img"
-          aria-label={title}
-        />
+        <Svg className={styles.featureSvg} role="img" aria-label={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <p>{quote}</p>
       </div>
     </div>
   );
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
