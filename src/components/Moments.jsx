@@ -840,6 +840,14 @@ const Moments = () => {
     images: [],
     likes: [],
     comments: []
+},
+{
+    id: 100,
+    time: '2026年10月27日 10:50',
+    content: '🎉测试包内图片。',
+    images: ['https://unpkg.com/tempsave@1.1.0/img/014.jpg'],
+    likes: [],
+    comments: []
 }
 
 	  
