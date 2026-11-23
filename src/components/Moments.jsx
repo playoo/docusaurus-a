@@ -848,6 +848,15 @@ const Moments = () => {
     images: ['https://unpkg.com/tempsave@1.1.0/img/014.jpg'],
     likes: [],
     comments: []
+},
+{
+    id: 101,
+    time: '2026年11月23日11:51',
+    content: '☀️无法控制的事情太多了，尽力就好。一辈子就活这么一次,可有、可无、可去、可留、可丢！
+',
+    images: [],
+    likes: [],
+    comments: []
 }
 
 	  
